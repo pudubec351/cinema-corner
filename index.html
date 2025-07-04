@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cinema Corner</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="beginner.html">Beginner</a></li>
+        <li><a href="#">Intermediate</a></li>
+        <li><a href="#">Cinephile</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🎬 Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1 class="hero-title">🎥 Welcome to Cinema Corner</h1>
+      <p class="hero-subtitle">Explore the films that shaped the world of cinema - from timeless classics to modern masterpieces.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="categories">
+      <div class="category">
+        <h2><a href="beginner.html">Beginner</a></h2>
+        <p>Start with accessible, powerful films that teach cinematic fundamentals.</p>
+      </div>
+      <div class="category">
+        <h2><a href="#">Intermediate</a></h2>
+        <p>Dive deeper into auteur cinema, foreign films, and visual complexity.</p>
+      </div>
+      <div class="category">
+        <h2><a href="#">Cinephile</a></h2>
+        <p>Challenge yourself with obscure, experimental, and deeply layered works.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Optional Scroll-to-top -->
+  <button id="scrollToTop" title="Back to top">↑</button>
+
+  <!-- Script for scroll button -->
+  <script>
+    const scrollBtn = document.getElementById("scrollToTop");
+    window.addEventListener("scroll", () => {
+      scrollBtn.style.display = window.scrollY > 300 ? "block" : "none";
+    });
+    scrollBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
+</body>
+</html>

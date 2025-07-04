@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact – Cinema Corner</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- 🌐 NAVIGATION -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="beginner.html">Beginner</a></li>
+        <li><a href="#">Intermediate</a></li>
+        <li><a href="#">Cinephile</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 📬 MAIN CONTACT SECTION -->
+  <main class="contact-page">
+    <h1>📬 Get in Touch</h1>
+
+    <section class="contact-container">
+      <div class="contact-info">
+        <img src="images/louis-avatar.jpg" alt="Louis Profile Photo" class="profile-pic" />
+
+        <h2>About Me</h2>
+        <p>Hello, I’m Louis — a passionate cinephile on a mission to help beginners fall in love with cinema. This site is my curated collection to guide you on a lifelong film journey. If you have any question about cinema or you need some help about cinema, I will guide you until you find what you want, I would rather to be contacted by mail.</p>
+
+        <h2>Contact Details</h2>
+        <p><strong>Email:</strong> louisdej2005@gmail.com</p>
+        <p><strong>Instagram:</strong> @louis.dejean</p>
+        <p><strong>GitHub:</strong> github.com/pudubec351</p>
+      </div>
+
+      <div class="contact-form">
+        <h2>Send Me a Message</h2>
+        <form action="mailto:louisdej2005@gmail.com" method="POST" enctype="text/plain">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
